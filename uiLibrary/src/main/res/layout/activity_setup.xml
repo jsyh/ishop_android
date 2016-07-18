@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#f2f2f2"/>
+
+    <TableRow
+        android:id="@+id/mTableRowInfo"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/personal_setup_info"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="个人资料"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="12dp"
+            android:drawableRight="@mipmap/personal_arrow_go"
+            android:gravity="right"
+            android:paddingRight="12dp"
+            android:textColor="#999999"
+            android:textSize="12sp"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#f2f2f2"/>
+
+    <TableRow
+        android:id="@+id/mTableRowHelp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/personal_help"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="帮助与反馈"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="12dp"
+            android:drawableRight="@mipmap/personal_arrow_go"
+            android:gravity="right"
+            android:paddingRight="12dp"
+            android:textColor="#999999"
+            android:textSize="12sp"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#f2f2f2"/>
+
+    <TableRow
+        android:id="@+id/mTableRowAbout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/personal_about"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="关于"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="12dp"
+            android:drawableRight="@mipmap/personal_arrow_go"
+            android:gravity="right"
+            android:paddingRight="12dp"
+            android:textColor="#999999"
+            android:textSize="12sp"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#f2f2f2"/>
+
+    <TableRow
+        android:id="@+id/mTableRowVersion"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/personal_setup_version"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="版本检测"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="12dp"
+            android:drawableRight="@mipmap/personal_arrow_go"
+            android:gravity="right"
+            android:paddingRight="12dp"
+            android:textColor="#999999"
+            android:textSize="12sp"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#f2f2f2"/>
+
+    <TableRow
+        android:id="@+id/mTableRowCache"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/personal_setup_cache"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="清除本地缓存"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/mTextViewCacheSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="12dp"
+            android:drawableRight="@mipmap/personal_arrow_go"
+            android:gravity="right"
+            android:paddingRight="12dp"
+            android:textColor="#999999"
+            android:textSize="12sp"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:background="#f2f2f2">
+
+        <Button
+            android:id="@+id/mButtonExit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_text_selected_color"
+            android:gravity="center"
+            android:text="退出当前账户"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+</LinearLayout>

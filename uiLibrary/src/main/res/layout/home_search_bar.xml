@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lineLayTitle"
+    android:layout_width="fill_parent"
+    android:layout_height="44dp"
+    android:layout_gravity="center_horizontal"
+    android:background="#ff5001"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/txtScanning"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="12dp"
+        android:src="@mipmap/home_sao" />
+
+    <LinearLayout
+        android:id="@+id/lineLaySearch"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="100"
+        android:background="@drawable/home_search_bg"
+        android:descendantFocusability="blocksDescendants">
+
+        <ImageView
+            android:id="@+id/title"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="12dp"
+            android:src="@mipmap/home_search" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="点击我搜索"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/txtShare"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="12dp"
+        android:src="@mipmap/home_share" />
+</LinearLayout>

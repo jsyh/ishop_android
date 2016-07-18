@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/apply_return_reason_bg_shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="快递单号"
+            android:textColor="@color/main_text_color"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/mEditTextExpressSn"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:hint="填写快递单号"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/main_text_color"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/apply_return_reason_bg_shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="快递名称"
+            android:textColor="@color/main_text_color"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/mEditTextExpressName"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:hint="填写快递名称"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/main_text_color"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            />
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dbdbdb"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/mButtonSubmit"
+                android:layout_width="75dp"
+                android:layout_height="27dp"
+                android:layout_margin="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/order_button_bg_shape_red"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#ff5000"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

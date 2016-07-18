@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_control"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="44dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbIntroduction"
+            style="@style/footbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="图文详情"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/rbBaseParams"
+            style="@style/footbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="基本参数"
+            android:textColor="#000000"
+            android:textSize="12sp"/>
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ViewStub
+                android:id="@+id/vsIntroduction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout="@layout/details_introduction_layout"/>
+
+            <ViewStub
+                android:id="@+id/vsBaseParams"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout="@layout/details_base_params_layout"/>
+
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

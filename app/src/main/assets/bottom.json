@@ -1,0 +1,44 @@
+{
+  /*文字的点击事件*/
+  /**正常情况的颜色**/
+
+  "textNormalColor": "#666666",
+  /**文字点击下的颜色**/
+
+  "textPressColor": "#FF5000",
+  /*item的点击事件，相当于背景色*/
+
+  "itemNormalColor": "#f2ffffff",
+  /**点击下之后的item背景色**//*
+  "itemPressColor": "#F7F7F7",*/
+  "items": [
+    {
+      "name": "首页",
+      "iconNormal": "home_home",
+      "iconPress": "home_home_press"
+    },
+    {
+      "name": "分类",
+      "iconNormal": "home_category",
+      "iconPress": "home_category_press"
+    },
+    {
+      "name": "发现",
+      "iconNormal": "home_found",
+      "iconPress": "home_found_press"
+    },
+    {
+      "name": "购物车",
+      "iconNormal": "home_cart",
+      "iconPress": "home_cart_press"
+    },
+    {
+      "name": "我的",
+      "iconNormal": "home_me",
+      "iconPress": "home_me_press"
+    }
+  ],
+  /**主页url地址**/
+  "mainUrlAddress":"http://demo1.ishopv.com/shopapi/index.php/goods_index"
+  /**服务器接口地址**/
+}

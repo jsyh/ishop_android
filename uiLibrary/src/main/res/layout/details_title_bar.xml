@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:gravity="center_vertical">
+
+    <!--<ImageButton
+        android:id="@+id/left_imbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/goods_detail_top_circle_bg"
+        android:src="@mipmap/ic_back" />
+
+
+    <ImageButton
+        android:id="@+id/right_imbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/goods_detail_top_circle_bg"
+        android:src="@mipmap/shopping_cart" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dbdbdb" />-->
+
+
+    <LinearLayout
+        android:id="@+id/mLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ffffff"
+        android:gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dbdbdb" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp">
+
+
+            <ImageButton
+                android:id="@+id/mIbBackBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@mipmap/goods_detail_back_black" />
+
+
+            <ImageButton
+                android:id="@+id/mIbBackWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/goods_detail_top_circle_bg"
+                android:src="@mipmap/goods_detail_back_white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp">
+
+
+            <ImageButton
+                android:id="@+id/mIbCartBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@mipmap/goods_detail_cart_black" />
+
+
+            <ImageButton
+                android:id="@+id/mIbCartWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/goods_detail_top_circle_bg"
+                android:src="@mipmap/goods_detail_cart_white" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

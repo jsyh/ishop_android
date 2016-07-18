@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="69dp">
+
+        <CheckBox
+            android:id="@+id/mCheckBoxGoods"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:button="@drawable/item_checked_bg_selector"
+            android:clickable="false"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/mImageViewShopPic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="12dp"
+            android:src="@mipmap/goods_detail_shop_photo"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mTextViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:includeFontPadding="false"
+                android:text="我的小蜜"
+                android:textColor="@color/main_text_color"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/mImageViewLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:src="@mipmap/personal_collect_shop_primary"/>
+        </RelativeLayout>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb"/>
+</LinearLayout>

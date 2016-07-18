@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/mTextViewAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/goods_detail_comment_bg"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="全部(300)"
+            android:textColor="#43464c"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/mTextViewGood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/goods_detail_comment_bg"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="好评(100)"
+            android:textColor="#43464c"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/mTextViewMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/goods_detail_comment_bg"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="中评(100)"
+            android:textColor="#43464c"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/mTextViewBad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/goods_detail_comment_bg"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="差评(100)"
+            android:textColor="#43464c"
+            android:textSize="12sp"/>
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"/>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="calendar_top_bg">#F5A0B3</color>
+    <color name="transparent1">#808080</color>
+    <color name="gary">#808080</color>
+    <!--标题栏背景色-->
+    <!--<color name="top_bg">#F7F7F7</color>
+    &lt;!&ndash;首页底栏背景色&ndash;&gt;
+    <color name="bottom_bg">#F7F7F7</color>
+    <color name="center_bg">#ffffff</color>-->
+    <color name="main_bottom_bg">#F7F7F7</color>
+    <color name="top_bg">#a120ff</color>
+    <color name="bottom_bg">#000000</color>
+    <color name="center_bg">#f5f5f5</color>
+    <color name="text_purple_color">#8337b3</color>
+    <color name="text_gary_color">#808080</color>
+    <color name="text_dark_color">#3B3B3B</color>
+    <color name="text_white_color">#FFFFFF</color>
+    <color name="text_red_color">#FF5000</color>
+    <color name="popu_dim_color">#8c000000</color>
+    <color name="line_color">#d9d9d9</color>
+    <color name="gary_text">#999999</color>
+
+    <!--floating button action-->
+    <color name="material_blue_500">#5677fc</color>
+
+    <!--底栏被选中字体颜色-->
+    <color name="bottom_text_color_select">#FF5000</color>
+    <!--底栏正常显示字体颜色-->
+    <color name="bottom_text_color_normal">#5E636E</color>
+    <color name="backgourd_layout_dark_color">#fafafa</color>
+    <color name="order_address_bg">#fff9f2</color>
+
+    <!--zxing-->
+    <color name="bg_color">#EDEDED</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+
+    <!--仿淘宝主色调-->
+    <color name="tb_pay">#fd5001</color>
+    <color name="tb_order_bottom_bg">#ffffff</color>
+    <color name="tb_line">#ececec</color>
+    <!--我的红包-->
+    <color name="wks_bg">#7cc7ea</color>
+    <color name="ysy_bg">#f2c775</color>
+    <color name="wsy_bg">#f498af</color>
+    <color name="ygq_bg">#b9b9b9</color>
+    <!--分类页背景色-->
+    <color name="category_bg_gray">#f2f2f2</color>
+    <color name="category_bg_white">#ffffff</color>
+
+    <color name="main_text_color">#43464c</color>
+    <color name="main_text_selected_color">#ff5000</color>
+    <color name="main_line_color">#dbdbdb</color>
+</resources>

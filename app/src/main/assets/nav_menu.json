@@ -1,0 +1,18 @@
+{
+  /*导航菜单*/
+
+  "navigationMenu": [
+    {
+      "id": 100,
+      "name": "分享",
+      //图片的名字，放在res/mipmap-xxhdpi即可，这里直接给出名字就ok
+      "icon": "ic_share"
+    },
+    {
+      "id": 200,
+      "name": "扫一扫",
+      //图片的名字，放在res/mipmap-xxhdpi即可，这里直接给出名字就ok
+      "icon": "ic_qcode"
+    }
+  ]
+}

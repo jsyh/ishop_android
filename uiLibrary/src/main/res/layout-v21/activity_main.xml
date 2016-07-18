@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragmentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="horizontal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bottom_bg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbHome"
+            style="@style/footbar"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:checked="true"
+            android:paddingTop="8dp"
+            android:text="@string/string_Home"/>
+
+        <RadioButton
+            android:id="@+id/rbCategory"
+            style="@style/footbar"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:paddingTop="8dp"
+            android:text="@string/string_category"/>
+
+        <RadioButton
+            android:id="@+id/rbFound"
+            style="@style/footbar"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:paddingTop="8dp"
+            android:text="@string/string_found"/>
+
+        <RadioButton
+            android:id="@+id/rbShoppingCart"
+            style="@style/footbar"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:paddingTop="8dp"
+            android:text="@string/string_shoppingCart"/>
+
+        <RadioButton
+            android:id="@+id/rbMe"
+            style="@style/footbar"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:paddingTop="8dp"
+            android:text="@string/string_Me"/>
+    </RadioGroup>
+
+</LinearLayout>
+

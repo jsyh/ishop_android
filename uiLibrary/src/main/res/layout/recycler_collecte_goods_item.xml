@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/mLayoutGoodsItem"
+              android:layout_width="match_parent"
+              android:layout_height="114dp"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/mCheckBoxGoods"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:clickable="false"
+            android:button="@drawable/item_checked_bg_selector"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/mImageViewGoodsPic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="12dp"
+            android:scaleType="fitCenter"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mTextViewGoodsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#43464c"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/mTextViewGoodsPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="#ff5000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/mTextViewCommentsNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:textColor="#999999"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb"/>
+</LinearLayout>

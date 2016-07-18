@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lineLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/friend_icon"
+            android:text="分享给好友"
+            android:textColor="@color/main_text_color"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/txtQRCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginLeft="15dp"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/code_icon"
+            android:text="二维码"
+            android:textColor="@color/main_text_color"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</FrameLayout>

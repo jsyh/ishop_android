@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="114dp"
+              android:background="#f2f2f2"
+              android:focusable="false"
+              android:focusableInTouchMode="true"
+              android:clickable="false"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="12dp">
+
+        <ImageView
+            android:id="@+id/mImageViewGoodsPic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/goods_detail_shop_photo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mTextViewGoodsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:text="亚达手表2015款新款机械男表亚达手表2015款新款机械男表亚达手表2015款新款机械男表亚达手表2015款新款机械男表亚达手表2015款新款机械男表"
+                android:textColor="@color/main_text_color"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mTextViewGoodsType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:includeFontPadding="false"
+                    android:text="颜色：卡其色"
+                    android:textColor="#999999"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/mTextViewGoodsPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:includeFontPadding="false"
+                        android:text="￥66.80"
+                        android:textColor="#ff5000"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/mTextViewGoodsNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="X 3"
+                        android:textColor="@color/main_text_color"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </TableRow>
+
+</LinearLayout>

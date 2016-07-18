@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.jsyh.shopping.uilibrary.drawerlayout.DrawerLayoutFixup
+        android:id="@+id/mainDrawerLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <!--main content -->
+        <include
+            layout="@layout/goods_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <!--main drawer layout-->
+        <com.jsyh.shopping.uilibrary.drawerlayout.DrawerLayoutFixup
+            android:id="@+id/filterDrawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@android:color/white">
+
+            <!--filter content -->
+
+            <include
+                layout="@layout/goods_main_drawer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <!--filter drawer -->
+            <include
+                layout="@layout/goods_sub_drawer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end" />
+
+
+        </com.jsyh.shopping.uilibrary.drawerlayout.DrawerLayoutFixup>
+
+
+    </com.jsyh.shopping.uilibrary.drawerlayout.DrawerLayoutFixup>
+
+
+</LinearLayout>

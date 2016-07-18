@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/mLinearLayoutComments"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/goods_detail_user_photo"/>
+
+        <TextView
+            android:id="@+id/mTextViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="我的号"
+            android:textColor="#656973"
+            android:textSize="14sp"/>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/mTextViewCommentContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="平时穿174，这次买的180，感觉很好平时穿174，这次买的180，感觉很好平时穿174，这次买的180，感觉很好"
+        android:textColor="#656973"
+        android:textSize="12sp"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp">
+
+
+        <TextView
+            android:id="@+id/mTextViewBuyRecordTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="2016-12-01"
+            android:textColor="#999999"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/mTextViewBuyRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="12dp"
+            android:text="颜色：灰色，大小xxxxxl"
+            android:textColor="#999999"
+            android:textSize="10sp"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb"/>
+</LinearLayout>

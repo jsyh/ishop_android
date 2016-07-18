@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="181dp"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/mImageViewShopPic"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_margin="12dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/goods_detail_shop_photo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mTextViewShopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="骆驼品质"
+                android:textColor="#43464c"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/mTextViewShopRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:text="三星店铺"
+                android:textColor="#ff5000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mTextViewGoodsNum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:includeFontPadding="false"
+                android:text="销量2798件 共99件宝贝"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:id="@+id/mTextViewGoInShop"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/goods_detail_comment_shape"
+                android:gravity="center"
+                android:text="进店"
+                android:textColor="#ff5000"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+    </TableRow>
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerViewGoods"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="#ffffff"
+        android:paddingLeft="12dp" />-->
+
+    <GridView
+        android:id="@+id/mGridViewGoods"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="#ffffff"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:paddingLeft="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#f2f2f2" />
+</LinearLayout>

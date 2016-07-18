@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--app升级--><!--在MoreActivity中--><!--暂无此功能-->
+    <string name="api_update">http://www.baidu.com</string>
+
+
+    <!--app的名字--><!--在AndroidManifest中-->
+    <string name="app_name">太郎屋</string>
+
+
+    <!--是否有顶部导航栏-->
+    <bool name="is_nav">true</bool>
+
+    <!--首页导航栏颜色-->
+    <color name="home_nav_color">#ff5001</color>
+
+    <!--导航布局颜色-->
+    <color name="nav_color">#ffffff</color>
+    <!--<color name="nav_color">#17cfaa</color>-->
+
+
+
+    <!--是否有导航栏布局菜单，-->
+    <bool name="is_nav_menu">true</bool>暂无
+
+
+    <!--是否底部菜单-->
+    <bool name="is_bottom_menu">true</bool>     <!--true : asset/bottom.json-->
+
+    <!--加载动画的gif图片。。。。--><!--暂无-->
+    <string name="load_animation">loading</string><!--直接写名字就可以了，放在res/mipmap-xxhdpi/-暂无-->
+
+
+    <!--是否有导航图片-->
+    <bool name="is_guide_images">true</bool>
+
+    <!--引导图片-->
+    <string-array name="guide_images">
+        <!--直接写图片的名字就可以了，放在res/mipmap-xxhdpi/-->
+
+        <item>guide1</item>
+        <item>guide2</item>
+        <item>guide3</item>
+        <item>guide4</item>
+        <item>guide5</item>
+
+    </string-array>
+
+    <!--是否开启推送，开启推送必须设置key--><!--暂无-->
+    <bool name="is_push_message">true</bool>
+    <!--二维码--><!--暂无-->
+    <bool name="is_qcode">true</bool>
+    <!--是否分享--><!--暂无-->
+    <bool name="is_share">true</bool>
+
+</resources>

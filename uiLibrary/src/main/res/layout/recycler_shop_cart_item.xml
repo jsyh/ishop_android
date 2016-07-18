@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ffffff">
+
+        <FrameLayout
+            android:id="@+id/mLayoutCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/mCheckBoxShopCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:button="@drawable/item_checked_bg_selector"
+                android:clickable="false"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/mLayoutGoShop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mTextViewShopName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/shop_cart_shop_photo"
+                android:drawablePadding="12dp"
+                android:drawableRight="@mipmap/personal_arrow_go"
+                android:gravity="center_vertical"
+                android:text="飞亚达手表"/>
+        </FrameLayout>
+
+    </TableRow>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerViewCartShopsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#f2f2f2"/>
+</LinearLayout>

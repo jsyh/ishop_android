@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="21dp">
+
+    <CheckBox
+        android:id="@+id/mCheckBoxCategory"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/select_attribute_shape"
+        android:button="@null"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="视频圣贤"
+        android:textColor="@color/attribute_one_item_selector"
+        android:textSize="12sp"/>
+
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:text="申请服务"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp"
+            />
+
+        <RadioGroup
+            android:id="@+id/mRadioGroupApply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <RadioButton
+                android:id="@+id/mRadioButton1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/goods_list_options_checkbox_bg"
+                android:checked="true"
+                android:paddingLeft="6dp"
+                android:text="退货退款"
+                android:textColor="@color/main_text_color"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/mRadioButton2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/goods_list_options_checkbox_bg"
+                android:paddingLeft="6dp"
+                android:text="申请维修"
+                android:textColor="@color/main_text_color"
+                android:textSize="14sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb"/>
+
+    <LinearLayout
+        android:id="@+id/mLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <EditText
+            android:id="@+id/mEditTextReturnReason"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/apply_return_reason_bg_shape"
+            android:hint="退货原因"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/main_text_color"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/mEditTextReturnPrice"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/apply_return_reason_bg_shape"
+            android:focusable="false"
+            android:hint="退货金额"
+            android:inputType="none"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/main_text_selected_color"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text="(最多99元，含发货邮费)"
+            android:textColor="#999999"
+            android:textSize="10sp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/mEditTextReturnIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/apply_return_reason_bg_shape"
+            android:hint="退货说明 最多200字"
+            android:lineSpacingExtra="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/main_text_color"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <EditText
+            android:id="@+id/mEditTextFixReason"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/apply_return_reason_bg_shape"
+            android:hint="维修原因"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/main_text_color"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            />
+
+
+        <EditText
+            android:id="@+id/mEditTextFixIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/apply_return_reason_bg_shape"
+            android:hint="维修说明 最多200字"
+            android:paddingBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/main_text_color"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dbdbdb"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/mButtonSubmitApply"
+                android:layout_width="75dp"
+                android:layout_height="27dp"
+                android:layout_margin="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/order_button_bg_shape_red"
+                android:gravity="center"
+                android:text="提交申请"
+                android:textColor="#ff5000"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

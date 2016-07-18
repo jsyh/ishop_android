@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f2f2f2"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/title_bar"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="65dp"
+        android:src="@mipmap/tlw_icon"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="V1.00"
+        android:textColor="#999999"/>
+
+    <TableRow
+        android:id="@+id/mTableRowVersion"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="65dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/personal_setup_version"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="检测新版本"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="12dp"
+            android:drawableRight="@mipmap/personal_arrow_go"
+            android:gravity="right"
+            android:paddingRight="12dp"
+            android:textColor="#999999"
+            android:textSize="12sp"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#f2f2f2"/>
+
+    <TableRow
+        android:id="@+id/mTableRowHelp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/personal_help"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="意见反馈"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="12dp"
+            android:drawableRight="@mipmap/personal_arrow_go"
+            android:gravity="right"
+            android:paddingRight="12dp"
+            android:textColor="#999999"
+            android:textSize="12sp"/>
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="京尚易和（北京）科技有限公司 版权所有"
+            android:textColor="#999999"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="copyright@2013-2015  (Build001-003-02)"
+            android:textColor="#999999"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+</LinearLayout>

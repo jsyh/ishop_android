@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jsyh.shopping.uilibrary.CoordinatorLayoutFixup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:divider="@drawable/line"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:showDividers="end|none">
+
+                <RelativeLayout
+                    android:id="@+id/custom_title_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rlBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true">
+
+                        <ImageView
+                            android:id="@+id/ivBack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ic_back" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@+id/rlBack"
+                        android:layout_toLeftOf="@+id/rlLayoutSwitch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical">
+
+                        <EditText
+                            android:id="@+id/etSearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/category_search_bg_shape"
+                            android:drawableLeft="@mipmap/category_search"
+                            android:focusable="false"
+                            android:singleLine="true"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlLayoutSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true">
+
+                        <ImageView
+                            android:id='@+id/ivLayoutSwitch'
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ic_goods_list_mode" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <com.jsyh.shopping.uilibrary.GoodsFilterTabView
+                    android:id="@+id/goodsFilterTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/temptText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/networkError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/wh_ww"
+            android:src="@mipmap/ic_network_error"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:text="@string/network_error"/>
+        <Button
+            android:id="@+id/btnReloadNetwork"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/category_search_bg_shape"
+            android:text="@string/reload_network"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvGoodsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <com.jsyh.shopping.uilibrary.button.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@mipmap/ic_back_top"
+        app:fab_colorNormal="@android:color/white"
+        app:fab_colorPressed="@android:color/white"
+        app:fab_colorRipple="@android:color/white"
+        app:fab_type="mini" />
+
+</com.jsyh.shopping.uilibrary.CoordinatorLayoutFixup>

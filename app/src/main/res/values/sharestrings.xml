@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--各平台所需AppId等-->
+    <string name="tencent">tencent1105377286</string>
+    <!--<string name="QQ_APP_ID">1105377286</string>
+    <string name="QQ_AppSecret">sm19flEWxGwDyLVL</string>-->
+    <string name="QQ_APP_ID">1105423640</string>
+    <string name="QQ_AppSecret">UtnBlwircoFm4bqU</string>
+
+    <!--<string name="WX_APP_ID">wxfbd34c4b5ebace5a</string>
+    <string name="WX_APPSecret">c4726e22e3bbc304b37f691149a8d435</string>-->
+    <string name="WX_APP_ID">wxe69f7f8b7d785aa3</string>
+    <string name="WX_APPSecret">e75b936c7281331c19acf5aed4d3e464</string>
+</resources>

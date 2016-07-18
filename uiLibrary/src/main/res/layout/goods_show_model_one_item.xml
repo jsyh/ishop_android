@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@drawable/goods_recycler_item_selector"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ivGoodsIconMode1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/tvGoodsNameMode1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvGoodsPrice1"
+            style="@style/wh_ww"
+            android:layout_below="@+id/tvGoodsNameMode1"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:textColor="@android:color/holo_red_light"
+
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvSaleFlag"
+            style="@style/wh_ww"
+            android:layout_alignTop="@+id/tvGoodsPrice1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tvGoodsPrice1"
+            android:background="@drawable/goods_recycler_item_shape"
+            android:text="促销"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCommentPercentile"
+            style="@style/wh_ww"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/tvSaleNums"
+            style="@style/wh_ww"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/tvCommentPercentile"
+            android:layout_toRightOf="@+id/tvCommentPercentile" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">ishop</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="string_Home">首页</string>
+    <string name="string_category">分类</string>
+    <string name="string_found">发现</string>
+    <string name="string_shoppingCart">购物车</string>
+    <string name="string_Me">我的</string>
+    <string name="add_tag">添加</string>
+    <string name="clear_history">清空历史搜索</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="filter">筛选</string>
+
+
+    <!--购物车-->
+    <string name="cart_goods_total_sum">合计：￥%1$s</string>
+    <string name="cart_goods_settle_accounts">去结算(%1$d)</string>
+    <string name="cart_goods_total_accounts">总额：￥%1$s</string>
+
+    <!--商品条件过滤 -->
+    <string-array name="arryfilter">
+
+        <item>综合</item>
+        <item>人气</item>
+    </string-array>
+
+    <string name="data_loding">加载中...</string>
+    <string name="follow">关注</string>
+    <string name="add_shop_cart">加入购物车</string>
+    <string name="network_error">网络请求失败！</string>
+    <string name="reload_network">重新加载</string>
+    <string name="network_errot_toast">网络好像开小差了!</string>
+
+    <string name="no_more">已经没有了!</string>
+
+    <string-array name="search_category">
+        <item>宝贝</item>
+        <item>店铺</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/personal_login_reg_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp">
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/personal_photo"/>
+
+        <ImageView
+            android:id="@+id/mImageViewCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:padding="20dp"
+            android:src="@mipmap/personal_login_back"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:paddingLeft="36dp"
+        android:text="找回密码"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"/>
+
+    <EditText
+        android:id="@+id/mEditTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/personal_user_name"
+        android:gravity="center"
+        android:hint="手机号"
+        android:inputType="phone"
+        android:lines="1"
+        android:textColor="#ffffff"
+        android:textColorHint="#7fffffff"
+        android:textSize="15sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="#ffffff"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/mEditTextVerifyCode"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_weight="100"
+            android:background="@null"
+            android:drawableLeft="@mipmap/personal_verify_code"
+            android:gravity="center"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:lines="1"
+            android:textColor="#ffffff"
+            android:textColorHint="#7fffffff"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/mTextViewGetVerifyCode"
+            android:layout_width="35dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/personal_forget_get_verify_code_bg"
+            android:gravity="center"
+            android:text="获取"
+            android:textColor="#ff3b30"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:id="@+id/mTextViewNext"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/personal_login_button_bg_shape"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="#ff3b30"
+        android:textSize="15sp"/>
+
+</LinearLayout>

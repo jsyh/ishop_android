@@ -1,0 +1,168 @@
+<resources>
+
+    <style name="footbar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@drawable/select_text_color</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="main_bottom_item">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="wrap_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="fill_text_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--个人中心text样式 -->
+    <style name="text_style" parent="wrap_text_style">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <!--个人中心text样式 -->
+    <style name="account_text_style" parent="wrap_text_style">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">#43464c</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="account_info_text_style" parent="wrap_text_style">
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#d9d9d9</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+    <!--注册text样式 -->
+    <style name="register_text_style" parent="wrap_text_style">
+        <item name="android:textColor">@color/transparent1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="register_edit_style" parent="fill_text_style">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">#cccccc</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="popuwindow_style">
+        <item name="android:windowEnterAnimation">@anim/popuwindow_in</item>
+    </style>
+
+    <!--我cao  ，上面咋 一堆样式呢 ！！！！！！ -->
+
+    <!--wh  w : width ； h : height-->
+    <style name="wh_ww">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="wh_wm">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="wh_mw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wh_mm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--淡入淡出popupwindow -->
+    <style name="popupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/alpha_out</item>
+    </style>
+
+    <!-- 菜单的动画. -->
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <!-- 自定义dialog的style -->
+    <style name="my_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+    </style>
+    <!--商品价格字体大小不同，设置两个style，用SpannableString-->
+    <style name="style0">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#ff5000</item>
+    </style>
+
+    <style name="style1">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#ff5000</item>
+    </style>
+
+    <!--商品列表价格字体-->
+    <style name="style2">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#ff5000</item>
+    </style>
+
+    <style name="style3">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ff5000</item>
+    </style>
+    <!--购物车商品列表价格字体-->
+    <style name="style4">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ff5000</item>
+    </style>
+
+    <style name="style5">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ff5000</item>
+    </style>
+    <!--商品列表-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ShopCartCheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/item_checked_bg_selector</item>
+        <item name="android:paddingLeft">12dp</item>
+    </style>
+
+    <style name="MyRatingBar">
+        <item name="android:progressDrawable">@drawable/comment_rating_bar</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+
+    <style name="MySpinnerStyle" parent="Base.Animation.AppCompat.DropDownUp">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+</resources>

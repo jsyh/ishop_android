@@ -1,0 +1,81 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/goodsInfoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlContentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/mButtonExchange"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/main_text_selected_color"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:text="立即兑换"
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_above="@id/mButtonExchange"
+                android:background="#dbdbdb"/>
+
+            <cn.bleu.widget.slidedetails.SlideDetailsLayout
+                android:id="@+id/Fl_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/viewLine"
+                app:duration="300"
+                app:percent="0.4">
+
+                <ListView
+                    android:id="@+id/list_baseContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none"/>
+
+                <LinearLayout
+                    android:id="@+id/detailFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="vertical"/>
+            </cn.bleu.widget.slidedetails.SlideDetailsLayout>
+
+        </RelativeLayout>
+
+        <ViewStub
+            android:id="@+id/vsNetworkError"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/empty_network_error"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/detail_title_bar"
+            layout="@layout/details_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_select_attribute"/>
+
+</android.support.design.widget.CoordinatorLayout>

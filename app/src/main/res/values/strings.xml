@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="title_activity_goods_filter">GoodsFilterActivity</string>
+    <!-- <string name="app_name">ishop</string>-->
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="host">http://192.168.1.225/shopapi/</string>
+
+</resources>
